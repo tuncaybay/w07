@@ -46,7 +46,7 @@ public class TimeConverter {
         if (ampm.equals("PM")) {
             saat += 12;
         }
-        LocalTime saat24 = LocalTime.of(saat, dakika);
+        saat24 = LocalTime.of(saat, dakika);
         System.out.println(saat24.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT)));
     }
 
